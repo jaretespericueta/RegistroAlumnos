@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Registrar alumno</h1>
+<form action="/Home/Registro" method="post">
+    <label>Nombre</label>
+    <input type="text" name="nombre"/>
+    <br />
+
+    <label>Paterno</label>
+    <input type="text" name="paterno"/>
+    <br />
+
+    <label>Materno</label>
+    <input type="text" name="materno"/>
+    <br />
+
+    <label>Edad</label>
+    <input type="text" name="edad" />
+    <br />
+    <button type="submit">Registrar</button>
+</form>
+<h1>@TempData["mensaje"]</h1>
